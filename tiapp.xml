@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+	<id>com.company.notificationtest</id>
+	<name>NotificationTest</name>
+	<version>1.0</version>
+	<publisher>not specified</publisher>
+	<url></url>
+	<description>not specified</description>
+	<copyright>not specified</copyright>
+	<icon>appicon.png</icon>
+	<fullscreen>false</fullscreen>
+	<navbar-hidden>false</navbar-hidden>
+	<analytics>true</analytics>
+	<guid>91e86075-373b-44e0-9416-66183390e8af</guid>
+	<property name="ti.ui.defaultunit" type="string">dp</property>
+	<android xmlns:android="http://schemas.android.com/apk/res/android">
+	</android>
+
+	<modules>
+	</modules>
+	<deployment-targets>
+		<target device="android">true</target>
+	</deployment-targets>
+	<sdk-version>3.2.3.GA</sdk-version>
+</ti:app>
