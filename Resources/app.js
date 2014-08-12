@@ -18,8 +18,7 @@ if(!Ti.App.Properties.getBool("displayedNotifications")){
 			contentText : notifications[i],
 			contentIntent: Ti.Android.createPendingIntent({
 				intent:intent,
-				type : Ti.Android.PENDING_INTENT_FOR_ACTIVITY,
-				flags : Ti.Android.FLAG_ACTIVITY_NO_HISTORY
+				type : Ti.Android.PENDING_INTENT_FOR_ACTIVITY
 			}),
 			flags : Titanium.Android.ACTION_DEFAULT | Titanium.Android.FLAG_AUTO_CANCEL | Titanium.Android.FLAG_SHOW_LIGHTS
 		}));
