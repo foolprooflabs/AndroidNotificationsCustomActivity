@@ -1,14 +1,10 @@
-
-
 if(!Ti.App.Properties.getBool("displayedNotifications")){
     var notifications = ["Apple","Orange","Banana"];
 
     for(var i = 0; i < notifications.length; i++){
         var intent = Ti.Android.createIntent({
 			action: Ti.Android.ACTION_MAIN,
-			packageName:"com.company.notificationtest",
-			className:"com.company.notificationtest.NotificationtestActivity",
-			flags:Ti.Android.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED  | Ti.Android.FLAG_ACTIVITY_SINGLE_TOP
+			url:"notificationClick.js"
 		});
 		intent.addCategory(Ti.Android.CATEGORY_LAUNCHER);
 		intent.putExtra("name",notifications[i]);
