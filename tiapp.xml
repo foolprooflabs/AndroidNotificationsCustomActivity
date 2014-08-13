@@ -14,6 +14,14 @@
 	<guid>91e86075-373b-44e0-9416-66183390e8af</guid>
 	<property name="ti.ui.defaultunit" type="string">dp</property>
 	<android xmlns:android="http://schemas.android.com/apk/res/android">
+		<activities>
+	       <activity url="notificationClick.js">
+	       		<intent-filter>
+	               <action android:name="android.intent.action.VIEW"/>
+	               <category android:name="android.intent.category.DEFAULT"/>
+           		</intent-filter>
+	       </activity>
+	   </activities>
 	</android>
 
 	<modules>
@@ -21,5 +29,5 @@
 	<deployment-targets>
 		<target device="android">true</target>
 	</deployment-targets>
-	<sdk-version>3.2.3.GA</sdk-version>
+	<sdk-version>3.3.0.GA</sdk-version>
 </ti:app>
