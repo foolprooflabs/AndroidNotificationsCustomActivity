@@ -1,14 +1,14 @@
 
 
-    var notifications = ["Apple","Orasnge","Banana"];
+    var notifications = ["Apple","Orange","Banana"];
 
     for(var i = 0; i < notifications.length; i++){
         var intent = Ti.Android.createIntent({
             action: Ti.Android.ACTION_VIEW,
-            className:"com.company.notificationtest.NotificationClickActivity",
-            flags:Ti.Android.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED  | Ti.Android.FLAG_ACTIVITY_SINGLE_TOP
+            packageName:"com.company.notificationtest",
+            className:"com.company.notificationtest.NotificationClickActivity"
         });
-        intent.addCategory(Ti.Android.CATEGORY_DEFAULT);
+        intent.addCategory(Ti.Android.CATEGORY_LAUNCHER);
         intent.putExtra("name",notifications[i]);
 
         Titanium.Android.NotificationManager.notify(i, Titanium.Android.createNotification({
@@ -27,5 +27,5 @@
 var win = Ti.UI.createWindow({
 
 });
-win.add(Ti.UI.createLabel({text: "HEjjoooooooooooooooooooLLO",backgroundColor:"blue"}));
+win.add(Ti.UI.createLabel({text: "HELLO",backgroundColor:"blue"}));
 win.open();
